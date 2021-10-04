@@ -1,26 +1,12 @@
 //
-//  main.cpp
+//  Counter.h
 //  9.2-Classes
 //
-//  Created by Eliot Reyes on 9/27/21.
+//  Created by Eliot Reyes on 10/3/21.
 //
 
-#include <iostream>
-#include "Circle.h"
-
-using namespace std;
-
-int main(int argc, const char * argv[]) {
-    Circle myCircle;
-    Circle anotherCircle(7.7);
-    cout << myCircle.getArea()<< endl;
-    cout << anotherCircle.getArea()<< endl;
-    
-    cout << sizeof(myCircle)<<endl;
-    return 0;
-}
-
-
+#ifndef COUNTER_H
+#define COUNTER_H
 class Counter {
 public:
     Counter(int initCounter, int initLimit) {
@@ -48,3 +34,5 @@ private:
     int limit;
     
 };
+
+#endif
